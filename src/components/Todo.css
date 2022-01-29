@@ -1,0 +1,135 @@
+.todo{
+    min-height: 100vh;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    min-width: 50%;
+    align-items: center;
+    flex-direction: column;
+}
+.todo button {
+    background-color: rgb(10, 6, 66);
+    font-size: 24px;
+    padding: 16px 23px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+.todo button:hover{
+    transform: scale(1.2);
+}
+
+.buttonBox{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    bottom:50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.todoBar{
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 500px;
+    height: 50px;
+    background-color: coral;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.icon2 > .del{
+    background-color: black;
+    width: 30px;
+    height:30px;
+    padding: 0;
+    border: none;
+    font-size: 15px;
+    color: bisque;
+}
+
+.icon2 > .next{
+    background-color: rgb(215, 197, 248);
+    width: 30px;
+    height:30px;
+    padding: 0;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    border: none;
+}
+
+.icon1 > .checkbox1{
+    width: 20px;
+    height:20px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+}
+.icon1 > .checkbox2{
+    width: 20px;
+    height:20px;
+    background-color: rgb(111, 245, 145);
+    border: none;
+    border-radius: 20px;
+}
+
+
+.icon1{
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.text1{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+}
+.text2{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    text-decoration: line-through;
+}
+
+.icon2{
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.textbox{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type='text']{
+    outline: none;
+    padding-left: 12px;
+    border: none;
+    width: 90%;
+    border-radius: 20px;
+    height: 50%;
+    font-size: 14px;
+    background-color: #313552;
+    font-weight: 600;
+    color: white;
+}
