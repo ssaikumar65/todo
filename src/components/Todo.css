@@ -1,11 +1,12 @@
+
 .todo{
-    min-height: 100vh;
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 100%;
+    padding: 20px;
     display: flex;
-    min-width: 50%;
+    justify-content: center;
+    gap: 30px;
     align-items: center;
-    flex-direction: column;padding-top: 40px;
+    flex-direction: column;
 }
 .todo button {
     background-color: rgb(10, 6, 66);
@@ -33,24 +34,24 @@
 }
 
 .todoBar{
-    margin-left: 20px;
-    margin-right: 20px;
-    min-width: 500px;
-    height: 50px;
+    width: 100%;
+    min-height: 50px;
+    max-width: 600px;
     background-color: coral;
-    border-radius: 50px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
     justify-content: center;
+    align-items: center;
     display: flex;
     color: white;
     font-weight: 500;
     overflow: hidden;
+    padding: 10px 0px;
 }
 
 .icon2 > .del{
     background-color: black;
-    width: 30px;
+    width:30px;
     height:30px;
     padding: 0;
     border: none;
@@ -62,56 +63,44 @@
     background-color: rgb(215, 197, 248);
     width: 30px;
     height:30px;
-    padding: 0;
     font-size: 15px;
+    padding: 0;
     color: black;
     font-weight: 600;
     border: none;
 }
 
-.icon1 > .checkbox1{
+.icon1 > .checkbox{
     width: 20px;
     height:20px;
     background-color: white;
     border: none;
+    cursor: pointer;
     border-radius: 20px;
+    overflow: hidden;
 }
-.icon1 > .checkbox2{
-    width: 20px;
-    height:20px;
+
+.icon1 > .box{
     background-color: rgb(111, 245, 145);
-    border: none;
-    border-radius: 20px;
 }
 
 
-.icon1{
-    width: 10%;
+.icon1, .icon2{
     justify-content: center;
     align-items: center;
     display: flex;
+    width: 15%;
 }
-.text1{
-    width: 80%;
+.text1, .text2{
+    width: 70%;
     justify-content: center;
     align-items: center;
     display: flex;
     color: black;
+    padding: 0px 5px;
 }
 .text2{
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: black;
     text-decoration: line-through;
-}
-
-.icon2{
-    width: 10%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
 
 .textbox{

@@ -8,7 +8,7 @@ const Todo = () => {
       return
     }
     let n = {id:Math.floor(Math.random() * 1000) + 4,desc:value,done:false};
-    setTodoArr(prev => [...prev,n]);
+    setTodoArr(prev => [n,...prev]);
     setValue('');
   }
 
@@ -26,11 +26,17 @@ const Todo = () => {
     console.log(todoArr)
   }
 
+  function handleKeyDown(e){
+    if(e.key==="Enter"){
+      createList()
+    }
+  }
+
   return(
     <div className='todo'>
-      <div style={{'background-color':'#313552'}} className='todoBar'>
+      <div style={{'backgroundColor':'#313552'}} className='todoBar'>
         <div className='textbox'>
-          <input autoFocus value={value} onChange={(e)=>setValue(e.target.value)} placeholder='Enter Todo Task...' type='text' />
+          <input onKeyDown={handleKeyDown} autoFocus value={value} onChange={(e)=>setValue(e.target.value)} placeholder='Enter Todo Task...' type='text' />
         </div>
         <div className='icon2'>
           <button onClick={()=>createList()} className='next'>{'>'}</button>
@@ -39,9 +45,9 @@ const Todo = () => {
       {
         todoArr.map((item)=>{
           return (
-            <div key={item.id} style={item.done?{"opacity":"0.5"}:null} className='todoBar'>
+            <div key={item.id} style={item.done?{"opacity":"0.7","boxShadow":"none"}:null} className='todoBar'>
               <div className='icon1'>
-                <div onClick={()=>checkClick(item)} className={!item.done?'checkbox1':'checkbox2'}></div>
+                <div onClick={()=>checkClick(item)} className={`checkbox ${!item.done?'':'box'}`}></div>
               </div>
               <div className={!item.done?'text1':'text2'}>{item.desc}</div>
               <div className='icon2'>

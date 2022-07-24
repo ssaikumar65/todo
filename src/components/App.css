@@ -1,6 +1,17 @@
 .App{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  min-height: 100vh;
+  flex-direction: column;
+}
+.title{
+  font-weight: bold;
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
